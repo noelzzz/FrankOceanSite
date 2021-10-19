@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title> Frank Ocean - Brutalist Project - Home Page </title>
+
+  <style>
+    /*Style tags for the individual html pages so each page has a different background color and so the navigation items scale up when the cursor hovers over them*/
+        body{
+            background-color: #EAFF30;
+        }
+
+        .headerNav li img:hover {
+            background-color: #fc1cd7;
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+
+<body>
+<!--Header class to fit the page navigation as well as the page Logo-->
+    <div class="header">
+        
+        <!--"ul" tag for an unorganized list where my page navigation will fit such as "Home", "Store", "Tour", and "Videos" options-->
+        <ul class="headerNav">
+            <!--First list item "li" the "home" option, links to the home page-->
+            <li><a href="home.html" class="headerNav"><img class="homeIcon"
+                        src="https://icons.iconarchive.com/icons/iconsmind/outline/256/Home-2-icon.png" /></a></li>
+            <!--Second list item "li" the "store" option, links to the store page-->
+            <li><a href="store.html" class="headerNav"><img class="storeIcon"
+                        src="https://www.shareicon.net/data/512x512/2015/11/01/665077_store_512x512.png"
+                        alt="store.png" /></a></li>
+            <!--Third list item "li" the "tour" option, links to the tour page-->
+            <li><a href="tour.html" class="headerNav"><img class="tourIcon"
+                        src="https://static.thenounproject.com/png/3203583-200.png" /></a></li>
+            <!--Fourth list item "li" the "videos" option, links to the videos externally-->
+            <li><a href="https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA" class="headerNav" target="blank"><img
+                        class="musicVideoIcon"
+                        src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/23.Videos-512.png" /></a></li>
+            <!--Logo link, links to the home page in each page-->
+            <a href="home.html" ><span id="artistName">Frank Ocean</span></a>   
+        </ul>
+    </div>
+
+<!--container class to contain all the elements I want to fit in the body under the header-->
+    <div class="container">
+        <!--The first div is a large column which takes about 71% of the screen-->
+        <div class="largeColumn">
+            <!--Tours heading for the column-->
+            <div class="toursTitle">
+                <p id="tourDates">Tour Dates:</p>
+            </div>
+            
+            <!--First Tour date, link to ticketmaster.com-->
+            <div class="eventDate">
+                <a href="https://www.ticketmaster.com/frank-ocean-tickets/artist/1648929">
+                    <p class="tourEvent">Chicago, Illinois <br> September 23rd, <br> 2022</p>
+                </a>
+            </div>
+            <!--Second Tour date, link to ticketmaster.com-->
+            <div class="eventDate2">
+                <a href="https://www.ticketmaster.com/frank-ocean-tickets/artist/1648929">
+                    <p class="tourEvent">Los Angeles, California <br> September 30th, <br> 2022</p>
+                </a>
+            </div>
+            <!--Third Tour date, link to ticketmaster.com-->
+            <div class="eventDate3">
+                <a href="https://www.ticketmaster.com/frank-ocean-tickets/artist/1648929">
+                    <p class="tourEvent">NYC, New York <br> October 4th, <br> 2022 </p>
+                </a>
+            </div>
+            
+        </div>
+      
+        <!--This div is a small column which was used in the home page, in this page we use it as a space to input your email-->
+        <div class="smallColumn">
+            <!--this div is the space where the sign up via email takes place -->
+            <div class="smallColumnText">
+                Sign UP For <br> Updates!
+                <br>
+                <!--Form input for the user to submit their email-->
+                <form class="emailSubmission" action="">
+                    <label for="email">Email</label>
+                    <input type="email" style="font-size: 24px;" id="email" size="10"><br><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+<!--In the footer we include a clickable link disguised as a disruptive advertisement as well as a link to the artist's spotify page-->
+    <footer>
+        <span><a href="https://www.yahoo.com" target="blank"><img src="https://cdn.glitch.com/0cd6f3aa-9cae-485f-9e41-0bcbb8bdc416%2Fyahoo-1996.jpg?v=1632180445326" alt="yahoo-1996.jpg"></a></span>
+
+        <span><a href="https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf" target="blank"><p class="footerMessage">ALBUM OUT <br> NOW!!!</p></a><span>
+    </footer>
+</body>
+
+</html>

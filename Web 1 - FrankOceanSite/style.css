@@ -1,0 +1,285 @@
+* {
+  font-family: "Orbitron", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Top Navigation */
+.header {
+  padding: 20px;
+}
+
+.headerNav li {
+  display: inline-block;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.headerNav li img {
+  width: 55px;
+  transition: transform 0.2s;
+}
+
+.container {
+  height: 1200px;
+  padding: none;
+  display: flex;
+}
+
+/* Store Page CSS */
+/* Left Column */
+.column {
+  float: left;
+  width: 750px;
+  margin: 0 auto;
+  height: 700px;
+  /* border: 3px solid black; */
+  display: flex;
+  border: 8px solid black;
+}
+
+#checkoutCard {
+  width: 70%;
+  border: 4px solid black;
+  box-shadow: 5px 5px black;
+  height: 500px;
+  margin: 100px auto;
+  font-size: 32px;
+  background-color: #d4d4d4;
+  font-weight: bold;
+  padding: 35px 0 0 35px;
+  transition: transform 0.2s;
+}
+
+#checkoutCard:hover {
+  transform: scale(1.05);
+}
+
+#checkoutTitle {
+  width: fit-content;
+}
+
+.checkoutTable {
+  font-size: 18px;
+  height: fit-content;
+  width: 90%;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+
+.checkoutList li {
+  list-style-type: none;
+  width: fit-content;
+  margin: 25px;
+  font-size: 24px;
+}
+
+.totalTable {
+  font-size: 24px;
+  width: 90%;
+  height: fit-content;
+  padding-bottom: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.totalRowItem li {
+  width: fit-content;
+  list-style-type: none;
+  height: 50px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* Right Column */
+
+.tableGallery {
+  margin: 0 auto;
+}
+
+.galleryItem {
+  width: 200px;
+  margin: 5px;
+  height: 200px;
+  box-shadow: 5px 5px black;
+}
+
+.galleryItem img {
+  transition: transform 0.2s;
+}
+
+.galleryItem img:hover {
+  box-shadow: 0 0 2px 1px #f00cec;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+}
+@keyframes example {
+  0% {
+    box-shadow: 0 0 10px 2px #63ffea;
+  }
+  25% {
+    box-shadow: 0 0 10px 2px #33beff;
+  }
+  50% {
+    box-shadow: 0 0 10px 2px #8121ff;
+  }
+  75% {
+    box-shadow: 0 0 10px 2px #ae21ff;
+  }
+  100% {
+    box-shadow: 0 0 10px 2px #56b8db;
+  }
+}
+
+/* Home Page CSS */
+
+.smallColumn {
+  float: left;
+  width: 26%;
+  height: 700px;
+  display: flex;
+  border: 8px solid black;
+}
+
+.smallColumnText {
+  text-align: center;
+  font-size: 48px;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.emailSubmission {
+  font-size: 32px;
+  margin-top: 70px;
+}
+
+#email {
+  border: 2px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+#email:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background: transparent;
+  font-size: 24px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.smallColumn img {
+  height: 500px;
+  width: auto;
+  margin: auto;
+}
+
+#mainContent {
+  float: left;
+  width: 47%;
+  border: 3px solid black;
+  height: 700px;
+  border: 8px solid black;
+}
+
+#mainLogo {
+  text-align: center;
+  font-size: 48px;
+  padding: 50px 0 50px 0;
+  font-weight: 500;
+  border-bottom: 16px solid black;
+}
+
+#centerText {
+  text-align: left;
+  font-size: 24px;
+  padding: 50px 35px 50px 35px;
+  font-weight: 400;
+}
+
+/* Tour Page CSS */
+
+.largeColumn {
+  float: left;
+  width: 72%;
+  height: 700px;
+  border: 8px solid black;
+  /* display: flex; */
+}
+
+.toursTitle {
+  height: 100px;
+}
+
+#tourDates {
+  font-size: 48px;
+  font-weight: 600;
+  padding-left: 70px;
+}
+
+.eventDate {
+  height: 130px;
+  padding-left: 100px;
+}
+
+.eventDate2 {
+  height: 130px;
+  padding-left: 300px;
+}
+
+.eventDate3 {
+  height: 130px;
+  padding-left: 600px;
+}
+
+.tourEvent {
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+footer {
+  margin: 20px;
+  height: 100px;
+}
+
+footer img {
+  padding-top: 20px;
+}
+
+.footerMessage {
+  text-align: center;
+  float: right;
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#artistName {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-weight: 800;
+  font-size: 48px;
+  transition: transform 0.2s;
+}
+
+#artistName:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: black;
+}
